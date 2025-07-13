@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+/* Define custom font variables */
+@theme {
+  --font-landing: 'Bebas Neue', sans-serif;
+  --font-quote: 'Lora', serif;
+}
+
+/* Apply them via custom classes or directly to elements */
+@layer utilities {
+  .font-landing {
+    font-family: var(--font-landing);
+  }
+
+  .font-quote {
+    font-family: var(--font-quote);
+  }
+}
+
+/* Optional: prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+   background-color: black;
+}
